@@ -6,8 +6,8 @@ namespace RepasoPruebaP1.Controllers
 {
     public class EquipoController : Controller
     {
-        // Acción Index que carga la lista de equipos
-        public IActionResult Index()
+        // Debes de poner el nombre que asignaste en viws Equipo
+        public IActionResult List()
         {
             // Crear la lista de equipos
             List<Equipo> equipos = new List<Equipo>();
