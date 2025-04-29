@@ -30,6 +30,15 @@ namespace RepasoPruebaP1.Models
             }
         }
 
+        // Propiedad calculada para TotalPuntos
+        public int TotalPuntos
+        {
+            get
+            {
+                return (PartidosGanados * 3) + (PartidosEmpatados);  // 3 puntos por victoria y 1 por empate
+            }
+        }
+
 
     }
 }
