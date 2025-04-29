@@ -55,7 +55,7 @@
                 @Html.DisplayFor(modelItem => item.TotalPartidos)
             </td>
             <td>
-                    @Html.ActionLink("Edit", "Edit", new { }, new { @class = "btn btn-success" /*Diseño a los botones*/ }) | 
+                    @Html.ActionLink("Edit", "EditarEquipo"/*tiene q ser el mismo q el que pusiste en la vista */, new { id=item.Id }, new { @class = "btn btn-success" /*Diseño a los botones*/ }) | 
                     @Html.ActionLink("Details", "Details", new {  }, new { @class = "btn btn-info" }) |
                     @Html.ActionLink("Delete", "Delete", new { }, new { @class = "btn btn-danger" })
             </td>

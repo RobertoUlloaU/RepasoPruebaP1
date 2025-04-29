@@ -14,6 +14,20 @@ namespace RepasoPruebaP1.Controllers
             var equipos = repositorio.DevuelveListadoEquipos();
             return View(equipos);
         }
+
+        public IActionResult EditarEquipo()
+        {
+            Equipo ldu = new Equipo
+            {
+                Id = 1,
+                Nombre = "LDU",
+                PartidosGanados = 10,
+                PartidosPerdidos = 5,
+                PartidosEmpatados = 5
+            };
+            return View(ldu);
+        }
+        
     }
 }
 
